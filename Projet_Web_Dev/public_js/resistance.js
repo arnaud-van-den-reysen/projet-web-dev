@@ -13,8 +13,14 @@ function gestionCalculResistance() {
     window.document.querySelector("#ValeurResistance").value = valeurResistance;
     gestionAffichage(couleur3);
     
-    
+    gestionAffichageResistance(couleur1,couleur2,couleur3);
     window.document.querySelector("#i_couleur1").background.color = window.document.querySelector("#i_couleur1").value;
+}
+
+function gestionAffichageResistance(couleur1,couleur2,couleur3){
+    window.document.querySelector("#cls-3").fill = couleur1;
+    window.document.querySelector("#cls-4").fill = couleur2;
+    window.document.querySelector("#cls-5").fill = couleur3;
 }
 
 function gestionAffichage(couleur) {
