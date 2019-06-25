@@ -18,34 +18,39 @@ and open the template in the editor.
                              (soulignement) */
 }
 
-body {
-    display: flex; /* Ce conteneur est "flexible" */
-    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-    flex-direction: column ; /* Les éléments sont empilés */
-    align-items: center; /* Les éléments portés sont centrés à la verticale */
-    width: 100%; /* La page occupe toute la largeur */
-    padding-top:100px;
-}
+
 header {
-    width: 916px; /* Les headers et sections occupent 916px) */
+    width: 100%; /* Les headers et sections occupent 916px) */
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: column; /* Les éléments sont empilés */
 }
 
-#tout{
-    display:flex;
-    flex-direction: row;
-}
-section img {
-    width:200px;
-    height:267px;
-    transition: width 0.5S, height 0.5s;
-}
-section img:hover,section svg:hover{
-    width:250px;
-    height:350px;
+nav input{
+    display: none;
 }
 
-section svg{
-    transform:rotate(90deg);
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black; 
 }
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*Cette liste n'a pas de puce*/
+    font-size: x-large; /*le texte est grossi en XXL*/
+    flex-grow: 1; /*L'espace occupe est elargie*/
+}
+
+nav ul li a{
+    padding: 10px; /*marge interieur*/
+    color: white;
+}
+
+nav ul li:hover{
+    background-color:#9a330a; /*Couleur du fond au passage de la souris*/
+}
+
+
