@@ -12,15 +12,42 @@ function gestionCalculResistance() {
     let valeurResistance = (couleur1 * 10 + couleur2) * Math.pow(10, couleur3%3);
     window.document.querySelector("#ValeurResistance").value = valeurResistance;
     gestionAffichage(couleur3);
-    
-    gestionAffichageResistance(couleur1,couleur2,couleur3);
-    window.document.querySelector("#i_couleur1").background.color = window.document.querySelector("#i_couleur1").value;
+    gestionAffichageResistance("#cls-3",couleur1);
+    gestionAffichageResistance("#cls-4",couleur2);
+    gestionAffichageResistance("#cls-5",couleur3);
 }
 
-function gestionAffichageResistance(couleur1,couleur2,couleur3){
-    window.document.querySelector("#cls-3").fill = couleur1;
-    window.document.querySelector("#cls-4").fill = couleur2;
-    window.document.querySelector("#cls-5").fill = couleur3;
+function gestionAffichageResistance(adresse,color){
+    if(color === 0){
+        window.document.querySelector(adresse).setAttribute("fill","balck");
+    }
+    if(color === 1){
+        window.document.querySelector(adresse).setAttribute("fill","brown");
+    }
+    if(color === 2){
+        window.document.querySelector(adresse).setAttribute("fill","red");
+    }
+    if(color === 3){
+        window.document.querySelector(adresse).setAttribute("fill","orange");
+    }
+    if(color === 4){
+        window.document.querySelector(adresse).setAttribute("fill","yellow");
+    }
+    if(color === 5){
+        window.document.querySelector(adresse).setAttribute("fill","green");
+    }
+    if(color === 6){
+        window.document.querySelector(adresse).setAttribute("fill","blue");
+    }
+    if(color === 7){
+        window.document.querySelector(adresse).setAttribute("fill","violet");
+    }
+    if(color === 8){
+        window.document.querySelector(adresse).setAttribute("fill","grey");
+    }
+    if(color === 9){
+        window.document.querySelector(adresse).setAttribute("fill","white");
+    }
 }
 
 function gestionAffichage(couleur) {
