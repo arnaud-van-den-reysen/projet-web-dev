@@ -20,6 +20,12 @@ h1 {
     margin-bottom: 15px;
 }
 
+#diviseur_aff {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
 section {
     width: 50%;
     display:flex;
@@ -44,6 +50,7 @@ article {
     border-top: yellow solid 5px;
 }
 form {
+    margin-top: 5px;
     display: flex;
     flex-direction:column;
     text-align: center;
