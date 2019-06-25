@@ -12,5 +12,12 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Diviseur de tension</h1>
+        <form id="diviseur" method="POST">
+            <label for="R1"></label><input type="number" id="R1" name="R1" size="20">
+            <label for="R2"></label><input type="number" id="R2" name="R2" size="20">
+            <label for="VCC"></label><input type="number" id="VCC" name="VCC" size="20">
+            <input id="button_diviseur" type="button" value="calcul">
+            <p id="diviseur_aff" onclick="calculDiviseur()"></p>
+        </form>
     </body>
 </html>
