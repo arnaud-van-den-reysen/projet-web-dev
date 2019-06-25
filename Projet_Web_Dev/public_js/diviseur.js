@@ -26,10 +26,13 @@ function calculDiviseur(){
         elVout.appendChild(window.document.createTextNode('Vout = ' + vout + 'V'));
         window.document.querySelector('#diviseur_aff').appendChild(elVout);
     }
-    $("#V1").textContent = "My Value";
-    $("#V2").text(v2);
-    $("#R1").text(r1);
-    $("#R2").text(r2);
+    
+    //affiche les valeurs sur le dessin
+    window.document.querySelector("#V1_aff").textContent = "V1:" + v1 + "V";
+    window.document.querySelector("#V2_aff").textContent = "V2:" + v2 + "V";
+    window.document.querySelector("#R1_aff").textContent = "R1:" + r1 + " Ω";
+    window.document.querySelector("#R2_aff").textContent = "R2:" + r2 + " Ω";
+    window.document.querySelector("#Vout_aff").textContent = "Vout:" + vout + " V";
 
 }
 
