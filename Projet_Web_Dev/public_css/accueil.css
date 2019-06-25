@@ -1,8 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+
 /* 
     Created on : 25 juin 2019, 11:51:15
     Author     : benjamin.callegarin
@@ -31,29 +27,30 @@ body {
 header{
     width:100%;
     text-align:center;
-    font-size:60px;
+    font-size:60px;/*taille du texte*/
     
 }
 #tout{
     width: 100%; /* Les headers et sections occupent 916px) */
     display: flex; /* Ce conteneur est "flexible" */
-    flex-direction: row;
+    flex-direction: row;/* les éléments de la section tout sont alignés*/
     justify-content:space-around;/* Les éléments sont empilés */
 }
 
 
 section img {
 
-    width:200px;
+    width:200px;/*dimensions de bases des images */
     height:267px;
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;/*tant de transition entre
+                                        l'état de base et le "zoom"*/
 }
 h1{
     color:white;
 }
 
-section img:hover,section svg:hover{
-    width:230px;
+section img:hover{
+    width:230px;/*dimensions du "zoom" au passage de la souris*/
     height:330px;
 }
 #diviseur img{
@@ -64,7 +61,7 @@ footer{
     background: black;
     color: white;
     text-align:center;
-    position:absolute;
+    position:absolute;/*position du footer en bas de page*/
     bottom:0;
 }
 
