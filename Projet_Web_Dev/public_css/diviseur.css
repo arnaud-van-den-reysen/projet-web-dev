@@ -8,3 +8,28 @@ and open the template in the editor.
     Author     : Arnaud.VDR
 */
 
+section {
+    
+}
+.partie_affichage {
+    float:left;
+    width: 30%;
+    height: 30%;
+}
+
+.partie_input {
+    width: 30%;
+    float:right;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+form div {
+    padding: 3px;
+    margin: 3px;
+    border: solid brown;
+}
