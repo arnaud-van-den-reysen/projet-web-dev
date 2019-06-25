@@ -21,70 +21,31 @@ and open the template in the editor.
 body {
     display: flex; /* Ce conteneur est "flexible" */
     justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-    flex-direction: column; /* Les éléments sont empilés */
+    flex-direction: column ; /* Les éléments sont empilés */
     align-items: center; /* Les éléments portés sont centrés à la verticale */
     width: 100%; /* La page occupe toute la largeur */
+    padding-top:100px;
 }
 header {
     width: 916px; /* Les headers et sections occupent 916px) */
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: column; /* Les éléments sont empilés */
 }
-nav ul {
-    display: flex; /* Ce conteneur est "flexible" */
-    flex-direction: row; /* Les éléments sont mis côte à côte */
-    justify-content: space-between; /* Les éléments sont répartis équitablement */
-    background-color: black; /* Couleur du fond */
-}
-nav ul li {
-    display: flex; /* Ce conteneur est "flexible" */
-    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-    list-style-type: none; /* Cette liste n'a pas de puce */
-    font-size: x-large; /* Le texte est grossi en XL */
-    flex-grow: 1; /* L'espace occupé est élargie */
-}
 
-nav ul li a {
-    padding: 10px; /* Marge intérieure */
-    color: white; /* Couleur du texte */
-}
-nav ul li:hover {
-    background-color:#9a330a; /* Couleur du fond au passage de la souris */
-}
-.zoom1 .zoom2{
-    height:400px;
+#tout{
     display:flex;
-    flex-direction: column ;
-
+    flex-direction: row;
 }
-.zoom1 div {
-    display:flex;
-    text-align:center;
-    flex-direction: column;
-    margin: 100px;
-}
-.zoom1 img {
+section img {
     width:200px;
     height:267px;
+    transition: width 0.5S, height 0.5s;
 }
-.zoom1 img:hover {
-    width:300px;
-    height:400px;
-    margin: 0px;
+section img:hover,section svg:hover{
+    width:250px;
+    height:350px;
 }
 
-.zoom2 div {
-    display:flex;
-    text-align:center;
-    flex-direction: column;
-    margin: 100px;
-}
-.zoom2 img {
-    width:200px;
-    height:267px;
-}
-.zoom2 img:hover {
-    width:300px;
-    height:400px;
-    margin: 0px;
+section svg{
+    transform:rotate(90deg);
 }
