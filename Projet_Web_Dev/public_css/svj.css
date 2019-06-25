@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 juin 2019, 14:57:59
+    Author     : pierr
+*/
+
+ .cls-1,.cls-2{
+     fill:#fff;
+ }
+                    
+ .cls-2{
+     stroke:#000;stroke-miterlimit:10;stroke-width:4px;
+ }
+
+ #cls-3{
+     border-color: black;
+ }
+ 
+  .cls-4{
+     border: black dotted;
+     
+ }
+ 
+  .cls-5{
+     border-color: black;
+ }
+ 
+ .cls-6{
+     fill:#fffd2a;
+ }
+ 
+ rect{
+     border: black dotted;
+ }

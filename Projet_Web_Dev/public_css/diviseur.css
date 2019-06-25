@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 juin 2019, 11:31:45
+    Author     : Arnaud.VDR
+*/
+
+h1 { 
+    color: indigo; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 50px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section {
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+}
+article {
+    width: 100%;
+}
+
+.partie_affichage {
+    background-color: paleturquoise;
+    border-left: magenta solid 5px;
+    border-right: magenta solid 5px;
+    border-bottom: blueviolet solid 5px;
+    border-top: blueviolet solid 5px;
+}
+.partie_input {
+    background-color: yellowgreen;
+    border-left: brown solid 5px;
+    border-right: brown solid 5px;
+    border-bottom: yellow solid 5px;
+    border-top: yellow solid 5px;
+}
+form {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+form div {
+    padding: 3px;
+    margin: 3px;
+}
+
+svg {
+    height:200px;
+    padding: 3px;
+}
+
+@media screen and (max-width:576px) {
+    section {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer {
+        visibility: hidden;
+    }
+}
