@@ -16,9 +16,10 @@ function calculDiviseur(){
     let v2 = parseInt(window.document.querySelector("#V2").value);
     let v1 = parseInt(window.document.querySelector("#V1").value);
     
+    //calcul de vout
     vout = (r1/(r1+r2))*v2-v1;
     
-    //si ça n'existe pas
+    //si ça n'existe pas alors crée elVout
     if(!window.document.querySelector('#Vout')) {
         let elVout = window.document.createElement('p');
         elVout.id = 'Vout'
