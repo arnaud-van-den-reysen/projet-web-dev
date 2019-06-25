@@ -61,3 +61,12 @@ nav ul li a {
 nav ul li:hover {
     background-color:#9a330a; /* Couleur du fond au passage de la souris */
 }
+
+footer{
+    width:100%;
+    background: black;
+    color: white;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+}

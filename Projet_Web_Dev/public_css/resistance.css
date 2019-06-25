@@ -11,13 +11,21 @@ and open the template in the editor.
 
 
 section{
-    padding-top: 50px;
+    
     padding-right: 10px;
     padding-left: 10px;
     width: 100%;
 }
 
 h1{
+    text-align: center;
+    color: crimson;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    
+}
+
+h2{
     text-align: center;
     color: blue;
     padding-top: 50px;
