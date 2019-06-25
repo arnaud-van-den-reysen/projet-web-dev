@@ -26,7 +26,7 @@ body {
     width: 100%; /* La page occupe toute la largeur */
 }
 header {
-    width: 960px; /* Les headers et sections occupent 916px (taille de la bannière) */
+    width: 916px; /* Les headers et sections occupent 916px (taille de la bannière) */
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: column; /* Les éléments sont empilés */
 }
@@ -54,6 +54,9 @@ nav ul li:hover {
 picture {
     display: flex;
 
+}
+picture:hover{
+    background-color:aqua
 }
 
 *{
