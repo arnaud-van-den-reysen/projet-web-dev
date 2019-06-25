@@ -51,7 +51,7 @@ nav ul li a {
 nav ul li:hover {
     background-color:#9a330a; /* Couleur du fond au passage de la souris */
 }
-.zoom1{
+.zoom1 .zoom2{
     height:400px;
     display:flex;
     flex-direction: column ;
@@ -72,12 +72,7 @@ nav ul li:hover {
     height:400px;
     margin: 0px;
 }
-.zoom2{
-    height:400px;
-    display:flex;
-    flex-direcetion: row;
 
-}
 .zoom2 div {
     display:flex;
     text-align:center;
