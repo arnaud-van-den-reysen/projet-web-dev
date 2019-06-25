@@ -26,9 +26,15 @@ body {
     align-items: center; /* Les éléments portés sont centrés à la verticale */
     width: 100%; /* La page occupe toute la largeur */
     padding-top:100px;
-    background-image: url("../public_images/background.png");
+    background-color:aqua;
 }
-header {
+header{
+    width:100%;
+    text-align:center;
+    font-size:60px;
+    
+}
+#tout{
     width: 100%; /* Les headers et sections occupent 916px) */
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: row;
@@ -47,8 +53,8 @@ h1{
 }
 
 section img:hover,section svg:hover{
-    width:250px;
-    height:350px;
+    width:230px;
+    height:330px;
 }
 #diviseur img{
     background-color:bisque;
@@ -66,10 +72,14 @@ footer{
     footer{
         display:none;/*disparition du footer*/
     }
-    header{
+    #tout{
         display:flex;/*Conteneur "flexible"*/
         flex-direction:column;/*les éléments sont empilés*/
         justify-content:center;/*éléments centrés à l'horizontale*/
         align-items:center;/*éléments centrés à la verticale*/
+    }
+    header{
+        font-size:30px;
+        
     }
 }
