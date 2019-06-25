@@ -4,21 +4,73 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="fr-FR">
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Une page qui permet de simuler un diviseur de tension">
+        <meta name="author" content="Arnaud VAN DEN REYSEN">
+        <script src="../public_js/diviseur.js" type="text/javascript"></script>
+        <link href="../public_css/diviseur.css" rel="stylesheet" type="text/css"/>
+        <link href="../public_css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <header>
+            <nav>
+                
+                <ul>
+                    <li><a href="index.html">Menu</a></li>
+  
+                    <li><a href="resistance.html">Resistance</a></li>
+ 
+                </ul>
+            </nav>
+        </header>
         <h1>Diviseur de tension</h1>
-        <form id="diviseur" method="POST">
-            <label for="R1">R1</label><input type="number" id="R1" name="R1" size="20">
-            <label for="R2">R2</label><input type="number" id="R2" name="R2" size="20">
-            <label for="VCC">V1</label><input type="number" id="V1" name="V1" size="20">
-            <label for="VCC">V2</label><input type="number" id="V2" name="V2" size="20">
-            <input id="button_diviseur" type="button" value="calcul">
-            <p id="diviseur_aff" onclick="calculDiviseur()"></p>
-        </form>
+        <section>
+            <article class="partie_input">
+                <form id="diviseur" method="POST">
+                    <div><label for="R1">R1</label><input type="number" id="R1" name="R1" size="20" value="2000"></div>
+                    <div><label for="R2">R2</label><input type="number" id="R2" name="R2" size="20" value="1000"></div>
+                    <div><label for="V1">V1</label><input type="number" id="V1" name="V1" size="20" value="0"></div>
+                    <div><label for="V2">V2</label><input type="number" id="V2" name="V2" size="20" value="9"></div>
+                    <p id="diviseur_aff"></p>
+                </form>
+            </article>
+
+            <article class="partie_affichage">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.33 277.32">
+                    <defs>
+                        <style>
+                            .cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:6px;}
+                            .cls-2{font-size:22.72px;font-family:MyriadPro-Regular, Myriad Pro;}
+                            .cls-3{letter-spacing:-0.03em;}
+                        </style>
+                    </defs>
+                    <title>diviseur</title>
+                    <g id="Calque_2" data-name="Calque 2">
+                        <g id="Calque_1-2" data-name="Calque 1">
+                        <rect class="cls-1" x="192.33" y="3" width="112" height="44"/>
+                        <rect class="cls-1" x="83.33" y="113" width="112" height="44" transform="translate(4.33 274.33) rotate(-90)"/>
+                        <line class="cls-1" x1="139.33" y1="79" x2="139.33" y2="25"/><line class="cls-1" x1="192.33" y1="25" x2="44.33" y2="25"/>
+                        <line class="cls-1" x1="139.33" y1="191" x2="139.33" y2="249"/><line class="cls-1" x1="304.33" y1="25" x2="369.33" y2="25"/>
+                        <text class="cls-2" id="V1_aff" transform="translate(126 271.64)">V1</text>
+                        <text class="cls-2" id="V2_aff" transform="translate(376 24.64)">V2</text>
+                        <text class="cls-2" id="R1_aff" transform="translate(170 142.64)">R1</text>
+                        <text class="cls-2" id="R2_aff" transform="translate(236 75)">R2</text>
+                        <text class="cls-2" id="Vout_aff" transform="translate(0 15)">
+                            <tspan class="cls-3">V</tspan>
+                            <tspan x="11.93" y="0">out</tspan>
+                        </text>
+                        </g>
+                    </g>
+                </svg>
+        </article>
+        </section>
+        <footer>
+            
+        </footer>
+        
     </body>
 </html>
