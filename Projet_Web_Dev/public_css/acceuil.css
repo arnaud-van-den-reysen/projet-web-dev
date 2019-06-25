@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 juin 2019, 11:51:15
+    Author     : benjamin.callegarin
+*/
+
+* {
+
+    box-sizing: border-box; /* Les tailles de conteneurs incluent bordures et 
+                               remplissages */
+    margin: 0; /* Mise à 0 des marges externes */
+    padding: 0; /* Mise à 0 des marges internes */
+    text-decoration: none; /* Suppression de la mise en forme habituelle des liens 
+                             (soulignement) */
+
+}
+
+body {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column ; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%; /* La page occupe toute la largeur */
+    padding-top:100px;
+    background-color:aqua;
+}
+header{
+    width:100%;
+    text-align:center;
+    font-size:60px;
+    
+}
+#tout{
+    width: 100%; /* Les headers et sections occupent 916px) */
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: row;
+    justify-content:space-around;/* Les éléments sont empilés */
+}
+
+
+section img {
+
+    width:200px;
+    height:267px;
+    transition: width 0.5s, height 0.5s;
+}
+h1{
+    color:white;
+}
+
+section img:hover,section svg:hover{
+    width:230px;
+    height:330px;
+}
+#diviseur img{
+    background-color:bisque;
+}
+footer{
+    width:100%;
+    background: black;
+    color: white;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+}
+
+@media screen and (max-width:576px) {/*paramètres sur téléphone*/
+    footer{
+        display:none;/*disparition du footer*/
+    }
+    #tout{
+        display:flex;/*Conteneur "flexible"*/
+        flex-direction:column;/*les éléments sont empilés*/
+        justify-content:center;/*éléments centrés à l'horizontale*/
+        align-items:center;/*éléments centrés à la verticale*/
+    }
+    header{
+        font-size:30px;
+        
+    }
+}
