@@ -105,7 +105,11 @@ and open the template in the editor.
                     <div>
                         <label for="ValeurResistance">Valeur Résistance :</label>
                         <input type="number" id="ValeurResistance" name="ValeurResistance">
-                        <input type="text" id="PoidsResistance" name="PoidsResistance">
+                        <select name="puissanceOhmique" id="i_puissanceOhmique">
+                            <option value="0" id="Ohms">Ohms</option>
+                            <option value="1" id="KiloOhms">KiloOhms</option>
+                            <option value="2" id="MegaOhms">MegaOhms</option>
+                            <option value="3" id="GigaOhms">GigaOhms</option>
                     </div>
                 </fieldset>
             </form>

@@ -52,16 +52,16 @@ function gestionAffichageResistance(adresse,color){
 
 function gestionAffichage(couleur) {
     if (couleur < 3) {
-        window.document.querySelector("#PoidsResistance").value = "Ohms";
+        window.document.querySelector("#i_puissanceOhmique").value = 0;
     }
     else if (couleur < 6) {
-        window.document.querySelector("#PoidsResistance").value = "KiloOhms";
+        window.document.querySelector("#i_puissanceOhmique").value = 1;
     }
     else if (couleur < 9) {
-        window.document.querySelector("#PoidsResistance").value = "MegaOhms";
+        window.document.querySelector("#i_puissanceOhmique").value = 2;
     }
     else {
-        window.document.querySelector("#PoidsResistance").value = "GigaOhms";
+        window.document.querySelector("#i_puissanceOhmique").value = 3;
     }
 }
 
