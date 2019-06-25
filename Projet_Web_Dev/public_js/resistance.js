@@ -19,7 +19,7 @@ function gestionCalculResistance() {
 
 function gestionAffichageResistance(adresse,color){
     if(color === 0){
-        window.document.querySelector(adresse).setAttribute("fill","balck");
+        window.document.querySelector(adresse).setAttribute("fill","black");
     }
     if(color === 1){
         window.document.querySelector(adresse).setAttribute("fill","brown");
@@ -65,9 +65,64 @@ function gestionAffichage(couleur) {
     }
 }
 
+function gestionCouleur(){
+    let valeurResistance = parseInt(window.document.querySelector("#ValeurResistance").value);
+    let puissanceResistance = parseInt(window.document.querySelector("#i_puissanceOhmique").value);
+    let bande1;
+    let bande2;
+    let bande3 = parseInt(gestionPuissance(puissanceResistance));
+    while(valeurResistance/100 > 1){
+        valeurResistance = valeurResistance/10;
+        bande3 += 1;
+    }
+    bande1 = parseInt(valeurResistance/10);
+    bande2 = parseInt(valeurResistance%10);
+    window.document.querySelector("#i_couleur1").value = bande1;
+    window.document.querySelector("#i_couleur2").value = bande2;
+    window.document.querySelector("#i_couleur3").value = bande3;
+    gestionAffichageResistance("#cls-3",bande1);
+    gestionAffichageResistance("#cls-4",bande2);
+    gestionAffichageResistance("#cls-5",bande3);
+}
+
+/*function gestionValeurResistance(valeurResistance){
+    let bande1;
+    let bande2;
+    let bande3 = parseInt(gestionPuissance(puissanceResistance));
+    if(valeurResistance/100 < 1){
+        bande1 = parseInt(valeurResistance/10);
+        bande2 = parseInt(valeurResistance%10);
+    }
+    else if(valeurResistance/100 <1){
+        valeurResistance = valeurResistance/10;
+        bande3 += 1;
+        bande1 = parseInt(valeurResistance/10);
+        bande2 = parseInt(valeurResistance%10);
+    }
+    else{
+        gestionValeurResistance
+    }
+}*/
+
+function gestionPuissance(puissanceResistance){
+    if(puissanceResistance === 0){
+        return 0;
+    }
+    else if(puissanceResistance === 1){
+        return 3;
+    }
+    else if(puissanceResistance === 2){
+        return 6;
+    }
+    else{
+        return 9;
+    }
+}
+
 window.addEventListener("load", function () {
     window.document.querySelector("#i_couleur1").addEventListener("change",gestionCalculResistance);
     window.document.querySelector("#i_couleur2").addEventListener("change",gestionCalculResistance);
     window.document.querySelector("#i_couleur3").addEventListener("change",gestionCalculResistance);
-
+    window.document.querySelector("#i_puissanceOhmique").addEventListener("change",gestionCouleur);
+    window.document.querySelector("#ValeurResistance").addEventListener("change",gestionCouleur);
 });
