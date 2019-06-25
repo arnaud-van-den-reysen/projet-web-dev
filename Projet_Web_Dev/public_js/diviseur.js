@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+/**
+ * @author arnaud VAN DEN REYSEN
+ * 
+ */
 function calculDiviseur(){
     var vout = 0;
     
