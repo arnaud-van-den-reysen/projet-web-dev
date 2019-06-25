@@ -4,6 +4,16 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : 25 juin 2019, 16:25:47
+    Author     : pierr
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : 25 juin 2019, 11:51:15
     Author     : benjamin.callegarin
 */
@@ -18,39 +28,36 @@ and open the template in the editor.
                              (soulignement) */
 }
 
-
+body {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%; /* La page occupe toute la largeur */
+}
 header {
     width: 100%; /* Les headers et sections occupent 916px) */
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: column; /* Les éléments sont empilés */
 }
-
-nav input{
-    display: none;
+nav ul {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    justify-content: space-between; /* Les éléments sont répartis équitablement */
+    background-color: black; /* Couleur du fond */
+}
+nav ul li {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    list-style-type: none; /* Cette liste n'a pas de puce */
+    font-size: x-large; /* Le texte est grossi en XL */
+    flex-grow: 1; /* L'espace occupé est élargie */
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: black; 
+nav ul li a {
+    padding: 10px; /* Marge intérieure */
+    color: white; /* Couleur du texte */
 }
-
-nav ul li{
-    display: flex;
-    justify-content: center;
-    list-style-type: none; /*Cette liste n'a pas de puce*/
-    font-size: x-large; /*le texte est grossi en XXL*/
-    flex-grow: 1; /*L'espace occupe est elargie*/
+nav ul li:hover {
+    background-color:#9a330a; /* Couleur du fond au passage de la souris */
 }
-
-nav ul li a{
-    padding: 10px; /*marge interieur*/
-    color: white;
-}
-
-nav ul li:hover{
-    background-color:#9a330a; /*Couleur du fond au passage de la souris*/
-}
-
-
