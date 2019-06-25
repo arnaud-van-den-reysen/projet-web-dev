@@ -13,16 +13,14 @@ function calculDiviseur(){
     
     vout = (r1/(r1+r2))*vcc;
     
-    if(!window.document.querySelector('#Vout')) {
-        let elVout = window.document.createElement('p');
-        elVout.id = 'Vout'
-        elVout.appendChild(window.document.createTextNode('Vout = ' + vout));
-    } else {
-        
-    }
     
+    let elVout = window.document.createElement('p');
+    elVout.id = 'Vout'
+    elVout.appendChild(window.document.createTextNode('Vout = ' + vout));
+    window.document.querySelector('body').appendChild(elVout);
+
 }
 
 window.addEventListener("load", function () {
-    window.document.querySelector("#button_diviseur").addEventListener("click", calculDiviseur);
+    window.document.querySelector("#VCC").addEventListener("input", calculDiviseur);
 });

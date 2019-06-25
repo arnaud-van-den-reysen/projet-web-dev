@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 juin 2019, 11:51:15
+    Author     : benjamin.callegarin
+*/
+
+* {
+
+    box-sizing: border-box; /* Les tailles de conteneurs incluent bordures et 
+                               remplissages */
+    margin: 0; /* Mise à 0 des marges externes */
+    padding: 0; /* Mise à 0 des marges internes */
+    text-decoration: none; /* Suppression de la mise en forme habituelle des liens 
+                             (soulignement) */
+}
+
+body {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%; /* La page occupe toute la largeur */
+}
+header {
+    width: 916px; /* Les headers et sections occupent 916px) */
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: column; /* Les éléments sont empilés */
+}
+nav ul {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    justify-content: space-between; /* Les éléments sont répartis équitablement */
+    background-color: black; /* Couleur du fond */
+}
+nav ul li {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    list-style-type: none; /* Cette liste n'a pas de puce */
+    font-size: x-large; /* Le texte est grossi en XL */
+    flex-grow: 1; /* L'espace occupé est élargie */
+}
+
+nav ul li a {
+    padding: 10px; /* Marge intérieure */
+    color: white; /* Couleur du texte */
+}
+nav ul li:hover {
+    background-color:#9a330a; /* Couleur du fond au passage de la souris */
+}
+.zoom1{
+    height:400px;
+    display:flex;
+    flex-direction: column ;
+
+}
+.zoom1 div {
+    display:flex;
+    text-align:center;
+    flex-direction: column;
+    margin: 100px;
+}
+.zoom1 img {
+    width:200px;
+    height:267px;
+}
+.zoom1 img:hover {
+    width:300px;
+    height:400px;
+    margin: 0px;
+}
+.zoom2{
+    height:400px;
+    display:flex;
+    flex-direcetion: row;
+
+}
+.zoom2 div {
+    display:flex;
+    text-align:center;
+    flex-direction: column;
+    margin: 100px;
+}
+.zoom2 img {
+    width:200px;
+    height:267px;
+}
+.zoom2 img:hover {
+    width:300px;
+    height:400px;
+    margin: 0px;
+}
