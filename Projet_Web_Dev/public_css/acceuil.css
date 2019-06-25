@@ -16,6 +16,7 @@ and open the template in the editor.
     padding: 0; /* Mise à 0 des marges internes */
     text-decoration: none; /* Suppression de la mise en forme habituelle des liens 
                              (soulignement) */
+
 }
 
 body {
@@ -25,27 +26,48 @@ body {
     align-items: center; /* Les éléments portés sont centrés à la verticale */
     width: 100%; /* La page occupe toute la largeur */
     padding-top:100px;
+    background-image: url("../public_images/background.png");
 }
 header {
-    width: 916px; /* Les headers et sections occupent 916px) */
+    width: 100%; /* Les headers et sections occupent 916px) */
     display: flex; /* Ce conteneur est "flexible" */
-    flex-direction: column; /* Les éléments sont empilés */
+    flex-direction: row;
+    justify-content:space-around;/* Les éléments sont empilés */
 }
 
-#tout{
-    display:flex;
-    flex-direction: row;
-}
+
 section img {
+
     width:200px;
     height:267px;
-    transition: width 0.5S, height 0.5s;
+    transition: width 0.5s, height 0.5s;
 }
+h1{
+    color:white;
+}
+
 section img:hover,section svg:hover{
     width:250px;
     height:350px;
 }
+#diviseur img{
+    background-color:bisque;
+}
+footer{
+    width:100%;
+    background: black;
+    color: white;
+    text-align:center;
+}
 
-section svg{
-    transform:rotate(90deg);
+@media screen and (max-width:576px) {/*paramètres sur téléphone*/
+    footer{
+        display:none;/*disparition du footer*/
+    }
+    header{
+        display:flex;/*Conteneur "flexible"*/
+        flex-direction:column;/*les éléments sont empilés*/
+        justify-content:center;/*éléments centrés à l'horizontale*/
+        align-items:center;/*éléments centrés à la verticale*/
+    }
 }
